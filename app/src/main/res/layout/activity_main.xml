@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cámara 1:"
+            android:layout_alignParentLeft="true"/>
+        <Switch android:id="@+id/btnSwitch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="on"
+            android:textOff="off"
+            android:layout_alignParentRight="true"
+            android:onClick="encender"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 1:"
+            android:layout_alignParentLeft="true"/>
+        <Switch android:id="@+id/btnSwitch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="on"
+            android:textOff="off"
+            android:layout_alignParentRight="true"
+            android:onClick="activar"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cámara 2:"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"/>
+
+        <ToggleButton android:id="@+id/btnToggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Si"
+            android:textOff="No"
+            android:layout_alignParentRight="true"
+            android:onClick="encender"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz 2:"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"/>
+
+        <ToggleButton android:id="@+id/btnToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Si"
+            android:textOff="No"
+            android:layout_alignParentRight="true"
+            android:onClick="activar"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperatura"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"/>
+
+        <Button android:id="@+id/btnInc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:onClick="incrementar"
+            android:background="@drawable/ic_launcher4"/>
+        <TextView android:id="@+id/lblNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17"
+            android:layout_toLeftOf="@id/btnInc"
+            android:layout_marginTop="10dp"/>
+        <Button android:id="@+id/btnDis"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/lblNum"
+            android:onClick="disminuir"
+            android:background="@drawable/ic_launcher5"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button android:id="@+id/btn1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher"/>
+        <ToggleButton android:id="@+id/btn2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/check"
+            android:textOff=""
+            android:textOn=""
+            android:layout_weight="1"/>
+        <Button android:id="@+id/btn3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_launcher"/>
+        <ToggleButton android:id="@+id/btn4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/check"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
